@@ -67,7 +67,8 @@ In the rest of this note we show that this appears to be the case.
 
 \section{Derivation}
 
-\textit{Note: different sign conventions are in use for the argument of periapsis, which affects the sign of the observed offsets. The use of absolute value signs circumvents this difficulty.}
+\textit{Note: different sign conventions are in use for the argument of periapsis, which affects the sign of the observed offsets. 
+Absolute values circumvent this difficulty.}
 
 In the following, $f$ and $\Delta f_\mathrm{obs}$ (defined by Equation~\ref{moddepth_def}) are fixed quantities for a given injection; they correspond to astrophysical parameters.
 We are studying the parameter estimation error in those quantities.
@@ -84,5 +85,19 @@ Where $\max$ and $\min$ functions extremize over $E$,
 \delta \Delta f_\mathrm{a} = \frac{1}{2} \left| \max(\delta f) - \min(\delta f)\right| - \Delta f_\mathrm{obs}.
 \label{ddfa}
 \end{equation}
+
+The extremal $\delta f_\mathrm{a}$ and $\delta \Delta f_\mathrm{a}$ depend on Equation \ref{irfo}: the form of the equation immediately shows that an extremum in $E$ and $\omega$ is reached when $E = 0$ and $\omega = n \pi$ for integer $n$.
+Finding $\max(\delta f)$ and $\min(\delta f)$ for general $\omega$ requires solving for $E$,
+
+\begin{eqnarray}
+0 = &\frac{-e \sin E}{\left(1 - e \cos E \right)^{2}} \left(\sqrt{1-e^2} \cos E \cos \omega - \sin E \sin \omega \right) +\ldots \nonumber \\
+    &\frac{-1}{\left(1-e \cos E \right)} \left(\sqrt{1-e^2} \sin E \cos \omega + \cos E \sin \omega \right),
+\end{eqnarray}
+\begin{equation}
+0 = 
+\ref{maxE}
+\end{equation}
+
+
 
 \end{document}
