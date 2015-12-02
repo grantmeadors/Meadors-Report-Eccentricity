@@ -94,10 +94,23 @@ Finding $\max(\delta f)$ and $\min(\delta f)$ for general $\omega$ requires solv
     &\frac{-1}{\left(1-e \cos E \right)} \left(\sqrt{1-e^2} \sin E \cos \omega + \cos E \sin \omega \right),
 \end{eqnarray}
 \begin{equation}
-0 = 
-\ref{maxE}
+0 = \sqrt{1-e^2} \sin E \cos \omega + (\cos E - e) \sin \omega.
+\label{maxE}
 \end{equation}
 
+\noindent where in the second equality we assume $e\leq 1$ (the orbit is bound).
+Solving this is easiest with a computer algebra system such as Wolfram Alpha, which verifies that $E = \pi n$ are extremal if $\sin \omega = 0$, and states that in other bound orbits the solutions are
 
+\begin{eqnarray}
+E_1 = 2 \pi n - 2 \tan^{-1} \left(\frac{\sqrt{1-e^2} \tan\left(\frac{\omega}{2}\right)}{1+e} \right),
+\label{maxE1}
+\end{eqnarray} 
+\begin{eqnarray}
+E_2 = 2 \pi n + 2 \tan^{-1} \left(\frac{\sqrt{1-e^2} \cot\left(\frac{\omega}{2}\right)}{1+e} \right).
+\label{maxE2}
+\end{eqnarray}
+
+\noindent For low eccentricity, $e \ll 1$, $e\geq 0$, we can approximate these solutions as $E_1 = 2\pi n - \omega$, $E_2 = 2\pi n + \pi - \omega$.
+The MDC paper by Messenger et al [PRD 92 (2015) 023006] interprets Galloway et al [Astrophys J 781 (2014) 14] as a $3-\sigma$ upper limit on $e$ at 0.068, so this approximation seems useful.
 
 \end{document}
