@@ -114,14 +114,14 @@ E_2 = 2 \pi n + 2 \tan^{-1} \left(\frac{\sqrt{1-e^2} \cot\left(\frac{\omega}{2}\
 These solutions do solve Equation~\ref{maxE} for $e=0$.
 The MDC paper by Messenger et al [PRD 92 (2015) 023006] interprets Galloway et al [Astrophys J 781 (2014) 14] as a $3-\sigma$ upper limit on $e$ at 0.068, so this approximation seems useful.
 
-Up to an overall sign ambiguity in Equations~\ref{dfa} and~\ref{ddfa}, we will calculate $\max(\delta f)$ using $E_1$ and $\min(\delta f)$ using $E_2$:
+Up to an overall sign ambiguity (inherited from Equation~\ref{irfo}, affecting Equations~\ref{dfa} and~\ref{ddfa}), we will calculate $\max(\delta f)$ using $E_1 = -\omega$ and $\min(\delta f)$ using $E_2 = \pi-\omega$:
 
 \begin{equation}
-\max(\delta f) = \Delta f_\mathrm{obs} \left|\frac{\sqrt{1-e^2} \cos^2 \omega + \sin^2 \omega}{1-e \cos (\omega)} \right|
+\max(\delta f) = \Delta f_\mathrm{obs} \left(\frac{\sqrt{1-e^2} \cos^2 \omega + \sin^2 \omega}{1-e \cos (\omega)} \right),
 \label{maxdeltaf}
 \end{equation}
 \begin{equation}
-\min(\delta f) = -\Delta f_\mathrm{obs} \left|\frac{\sqrt{1-e^2} \cos^2\omega + \sin^2 \omega}{1+e \cos \omega} \right|
+\min(\delta f) = -\Delta f_\mathrm{obs} \left(\frac{\sqrt{1-e^2} \cos^2\omega + \sin^2 \omega}{1+e \cos \omega} \right),
 \label{mindeltaf}
 \end{equation}
 
