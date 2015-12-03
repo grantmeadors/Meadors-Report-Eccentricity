@@ -125,4 +125,37 @@ Up to an overall sign ambiguity (inherited from Equation~\ref{irfo}, affecting E
 \label{mindeltaf}
 \end{equation}
 
+\noindent So inserting these into Equations~\ref{dfa} and ~\ref{ddfa} yields
+
+\begin{equation}
+\delta f_\mathrm{a} = \frac{1}{2} \left( \frac{\sqrt{1-e^2} \cos^2 \omega + \sin^2 \omega}{1-e^2 \cos^2 \omega} e \cos \omega \right) \Delta f_\mathrm{obs},
+\label{solved_dfa}
+\end{equation}
+\begin{equation}
+\delta \Delta f_\mathrm{a} = \frac{1}{2} \left( \frac{\sqrt{1-e^2} \cos^2 \omega + \sin^2 \omega}{1-e^2 \cos^2 \omega} \right)  \Delta f_\mathrm{obs} - \Delta f_\mathrm{obs}.
+\label{solved_ddfa}
+\end{equation}
+
+Equations~\ref{solved_dfa} and~\ref{solved_ddfa} correctly predict the observed offsets, up to a sign (which is dependent on the argument of periapsis convention).
+It is easy to verify that for $e=0.07$, they predict that an $a\sin i = 1.95$ light-s, $f=2039.95$ Hz signal will have an extremal case at $\omega=0$ with shifts of 25.7 mHz in $\delta f_\mathrm{a}$ and 0.9 mHz in $\delta \Delta f_\mathrm{a}$, which is what is seen in injections.
+
+The equations are related, taking care when $e$ or $\omega$ equals $0$, by
+
+\begin{equation}
+\delta f_\mathrm{a} = \left(\delta \Delta f_\mathrm{a} + \Delta f_\mathrm{obs} \right) e \cos \omega,
+\end{equation}
+\begin{equation}
+\delta \Delta f_\mathrm{a} = \frac{\delta f_\mathrm{a}}{e \cos \omega} - \Delta f_\mathrm{obs}.
+\end{equation}
+
+%And for low eccentricity cases, the following approximations can be useful:
+
+
+%\begin{equation}
+%\delta f_\mathrm{a} = \frac{e \Delta f_\mathrm{obs}}{1-e^2\cos^2\omega} \cos \omega
+%\end{equation}
+%\begin{equation}
+%\delta \Delta f_\mathrm{a} = \frac{e^2 \Delta f_\mathrm{obs}}{1-e^2\cos^2\omega} \cos^2\omega.
+%\end{equation}
+
 \end{document}
